@@ -5,16 +5,16 @@ INSERT INTO `addon_account` (name, label, shared) VALUES
 ;
 
 INSERT INTO `jobs` (name, label) VALUES
-	('slaughterer', 'Abatteur'),
-	('fisherman', 'Pêcheur'),
-	('miner', 'Mineur'),
-	('lumberjack', 'Bûcheron'),
-	('fueler', 'Raffineur'),
-	('reporter', 'Journaliste'),
-	('tailor', 'Couturier')
+	('slaughterer', 'Abatteur', 0),
+	('fisherman', 'Pêcheur', 0),
+	('miner', 'Mineur', 0),
+	('lumberjack', 'Bûcheron', 0),
+	('fueler', 'Raffineur', 0),
+	('reporter', 'Journaliste', 0),
+	('tailor', 'Couturier', 0)
 ;
 
-INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
+INSERT INTO `job_grades` ('id', 'job_name', 'grade', 'name', 'label', 'salary', 'skin_male', 'skin_female') VALUES
 	('lumberjack', 0, 'employee', 'Intérimaire', 0, '{}', '{}'),
 	('fisherman', 0, 'employee', 'Intérimaire', 0, '{}', '{}'),
 	('fueler', 0, 'employee', 'Intérimaire', 0, '{}', '{}'),
